@@ -1,0 +1,25 @@
+.menu-nav {
+	padding: 70px 200px;
+	height: 250px;
+	background-color: $color-yellow;
+
+	& h3 {
+		text-align: center;
+		font-family: $font-family--prices;
+	}
+}
+
+.menu-btn {
+	width: 165px;
+	height: 50px;
+	color: $black;
+	text-transform: uppercase;
+	border: 1px solid $black;
+	background-color: $color-yellow;
+
+	.active {
+		background-color: $black;
+		color: $color-yellow;
+	}
+}
+

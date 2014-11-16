@@ -1,0 +1,35 @@
+// ==========================================================================
+// Global Variables
+// ==========================================================================
+
+// grid variables
+$grid-columns					: 12;
+$unit							: (100%  / $grid-columns);
+$gutter							: 2% !default;
+$push							: 0 !default;
+ 
+ 
+// breakpoints
+$break-wide						: 1240px;
+$break-desktop					: 990px;
+$break-tablet					: 767px;
+$break-mobile					: 480px;
+
+$margin							: $gutter;
+
+// Font Stacks
+
+// $font-family--primary		:
+// $font-family--secondary		: 
+$font-family--prices			: "Novecento Sans W01 Wd Normal";
+
+// Base Colors
+
+$white							: #fff;
+$black							: #333;
+
+// Color Usage
+
+$color-red						: #b20000;
+$color-yellow					: #e6e316;
+$color-ink						: #374654;

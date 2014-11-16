@@ -1,0 +1,54 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+// Fonts
+
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=dbe589a9-3cc1-4594-a0f3-743b068c22c4&fontids=1285129");
+
+@font-face {
+font-family:"Novecento Sans W01 Wd Normal";
+src:url("Fonts/1285129/2bc9998a-37f2-4ba0-9dde-437371da3d4a.eot?#iefix");
+src:url("Fonts/1285129/2bc9998a-37f2-4ba0-9dde-437371da3d4a.eot?#iefix") format("eot"),
+	url("Fonts/1285129/2b3505cb-fa71-4717-9a25-734c3e5e2481.woff") format("woff"),
+	url("Fonts/1285129/93f6b2a5-4e78-4ef8-a499-ac8279acf7f9.ttf") format("truetype"),
+	url("Fonts/1285129/70fe9c5a-8fdd-4e4b-84f0-60bdfad0c7ac.svg#70fe9c5a-8fdd-4e4b-84f0-60bdfad0c7ac") format("svg");
+}
+
+// Layout Mixins
+
+@mixin box-size {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(boxsizing.htc);
+}
+
+// Clearfix Mixin
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// CSS3 PROPERTIES
+
+@mixin transition {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+@mixin fade {
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+@mixin position-centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

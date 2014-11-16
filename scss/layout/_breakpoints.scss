@@ -1,0 +1,34 @@
+/* ==========================================================================
+
+// Breakpoint File
+// Add new or make changes to existing breakpoints.
+
+/* VARIABLES -
+========================================================================== */
+$break-wide: 1240px;
+$break-desktop: 990px;
+$break-tablet: 767px;
+$break-mobile: 480px;
+
+$margin: $gutter;
+
+/* MIXIN -
+========================================================================== */
+
+@mixin break($media, $col) {
+	@if $media == tablet {
+
+		@media only screen and (max-width:$break-tablet) {
+			width: (($unit * $col) - $margin ) ;
+			margin: $margin / 2;
+		}
+	}
+
+	@else if $media == mobile {
+
+		@media only screen and (max-width:$break-mobile) {
+			width: (($unit * $col) - $margin ) ;
+			margin: $margin / 2;
+		}
+	}
+}
