@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="//use.typekit.net/nee2qdm.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	</head>
 <body>
 	<section class="header">
@@ -23,7 +24,7 @@
 	</section>
 
 	<section class="explainer">
-		<h3>The Old Church is a stunning Hawke’s Bay landmark that has been converted into a plush and quirky restaurant and bar perfect for casual dining, weddings, functions and events.</h3>
+		<h3>The Old Church is a stunning Hawke’s Bay landmark that has been converted into a plush and quirky restaurant and bar perfect for casual dining, weddings, functions &amp; events.</h3>
 	</section>
 
 	<section class="thumb-grid">
@@ -47,11 +48,77 @@
 
 	<section class="menu-nav">
 		<h3>Menus</h3>
-		<button class="menu-btn active">Dinner</button>
-		<button class="menu-btn">Lunch</button>
-		<button class="menu-btn">Canapes</button>
-		<button class="menu-btn">Wine List</button>
+		<div class="menu-nav-btn">
+			<button class="menu-btn-active">Dinner</button>
+			<button class="menu-btn">Lunch</button>
+			<button class="menu-btn">Canapes</button>
+			<button class="menu-btn">Wine List</button>
+		</div>
 	</section>
+
+	<section class="menu-content">
+		<div class="menu-content-first">
+			<h5>Entree</h5>
+			<p class="menu-price">$14</p>
+			<p class="menu-item">Soup of the day, flatbread, please ask your waitperson.</p>
+			<p class="menu-price">$18</p>
+			<p class="menu-item">Ham hock terrine, potato &amp; dill salad, raspberry pickled onion, crisp breads.</p>
+			<p class="menu-price">$18</p>
+			<p class="menu-item">Venison ham, apple, blackberry &amp; gin relish, watercress &amp; toasted walnuts.</p>
+			<p class="menu-price">$20</p>
+			<p class="menu-item">Seared Atlantic scallops, miso &amp; butternut, black pudding &amp; apple.</p>
+			<p class="menu-price">$20</p>
+			<p class="menu-item">“Arataki” honey and soy marinated yellow fin tuna, pickled veggies &amp; wasabi.</p>
+		</div>
+		<div class="menu-content-second">
+			<h5>Main</h5>
+			<p class="menu-price">$14</p>
+			<p class="menu-item">Soup of the day, flatbread, please ask your waitperson.</p>
+			<p class="menu-price">$18</p>
+			<p class="menu-item">Ham hock terrine, potato &amp; dill salad, raspberry pickled onion, crisp breads.</p>
+			<p class="menu-price">$18</p>
+			<p class="menu-item">Venison ham, apple, blackberry &amp; gin relish, watercress &amp; toasted walnuts.</p>
+			<p class="menu-price">$20</p>
+			<p class="menu-item">Seared Atlantic scallops, miso &amp; butternut, black pudding &amp; apple.</p>
+			<p class="menu-price">$20</p>
+			<p class="menu-item">“Arataki” honey and soy marinated yellow fin tuna, pickled veggies &amp; wasabi.</p>
+		</div>
+		<div class="menu-content-third">
+			<h5>Dessert</h5>
+			<p class="menu-price">$14</p>
+			<p class="menu-item">Soup of the day, flatbread, please ask your waitperson.</p>
+			<p class="menu-price">$18</p>
+			<p class="menu-item">Ham hock terrine, potato &amp; dill salad, raspberry pickled onion, crisp breads.</p>
+			<p class="menu-price">$18</p>
+			<p class="menu-item">Venison ham, apple, blackberry &amp; gin relish, watercress &amp; toasted walnuts.</p>
+			<p class="menu-price">$20</p>
+			<p class="menu-item">Seared Atlantic scallops, miso &amp; butternut, black pudding &amp; apple.</p>
+			<p class="menu-price">$20</p>
+			<p class="menu-item">“Arataki” honey and soy marinated yellow fin tuna, pickled veggies &amp; wasabi.</p>
+		</div>
+	</section>
+
+	<section class="map">
+		<div id="map_canvas"></div>
+	</section>
+
+	<section class="footer">
+		
+	</section>
+
+	<script>
+    	function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+        	center: new google.maps.LatLng(-39.541036, 176.872872),
+          	zoom: 15,
+          	scrollwheel: false,
+          	mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        	var map = new google.maps.Map(mapCanvas, mapOptions)
+      	}
+      	google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+.thumb-grid {
+	margin: 0;
+	padding: 0;
+	height: 400px;
+
+	& h4 {
+		color: $white;
+		text-transform: uppercase;
+		width: 210px;
+		height: 32px;
+		text-align: center;
+		margin-left: -105px;
+		margin-top: -16px;
+		@include position-centre;
+	}
+}
+
+.thumb {
+	margin: 0;
+	height: 400px;
+	position: relative;
+	@include grid(3);
+	@include break(tablet, 6);
+	@include break(mobile, 12);
+
+	& .thumb-title {
+		display: inline;
+	}
+
+	&::before {
+		content: "";
+		background-color: rgba(50,56,61,0.4);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	& img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
