@@ -1,7 +1,7 @@
 .menu-nav {
 	// padding-top: 65px;
 	height: 250px;
-	background-color: $color-yellow;
+	background-color: $color-teal;
 
 	& h3 {
 		text-align: center;
@@ -19,7 +19,7 @@
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 75px;
-	background-color: $color-yellow;
+	background-color: $color-teal;
 	@include grid(12);
 }
 
@@ -30,13 +30,13 @@
 	margin-left: 25px;
 	text-transform: uppercase;
 	border: 1px solid $black;
-	background-color: $color-yellow;
+	background-color: transparent;
 }
 
 .menu-btn-active {
 	@extend .menu-btn;
 	background-color: $black;
-	color: $color-yellow;
+	color: #AB6B51;
 }
 
 .menu-content {
